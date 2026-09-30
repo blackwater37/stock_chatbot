@@ -136,7 +136,7 @@ def show(res, saved=False):
 
 # ───────────────────────── 화면 ─────────────────────────
 st.title("주식 분석 챗봇")
-demos = load_demo()
+demos = load_demo(demo_mtime())
 bot = load_agent()
 live = bot is not None and llm_online()
 st.caption("질문마다 따로 답합니다. 앞 대화를 기억하지 않으니 종목과 기간을 넣어 물어봐 주세요."
